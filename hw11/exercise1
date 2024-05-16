@@ -1,0 +1,43 @@
+#include <iostream>
+using namespace std;
+
+class fruit {
+public:
+   // constructor
+   fruit() {
+      price = 200; many = 2; day = 12; // default values
+   }
+   fruit(float p, int n, int d) {
+      price = p;
+      many = n;
+      day = d;
+   }
+   // member data
+   int many;
+   float price;
+   int day;
+   // member function
+   float show() {
+      return price * many;
+   }
+   void show_all() {
+      cout << "price = "<< price << "  " << "many = " << many << "  " << "day = " << day << endl;
+   }
+};
+
+
+int main() {
+   fruit apple, pear, peach, mango;
+   pear = fruit(300, 5, 1);
+   peach = fruit(1000, 5,2);
+   mango = fruit(700, 8,3);
+   cout << apple.show() << endl;
+   cout << pear.show() << endl;
+   cout << peach.show() << endl;
+   cout << mango.show() << endl;
+   apple.show_all();
+   pear.show_all();
+   peach.show_all();
+   mango.show_all();
+   return 123;
+}
