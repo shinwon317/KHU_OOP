@@ -16,4 +16,5 @@ int main()
    B = A + 2;
    cout << B[0].apple.many << " ";
    cout << B[0].apple.price << endl;
-   cout << (B+2)->apple.many <<...
+   cout << (B+2)->apple.many << " " << (B+2)->apple.price << endl;
+	return 123;
