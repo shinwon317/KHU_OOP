@@ -18,3 +18,4 @@ int main()
    cout << B[0].apple.price << endl;
    cout << (B+2)->apple.many << " " << (B+2)->apple.price << endl;
 	return 123;
+}
