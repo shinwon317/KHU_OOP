@@ -5,7 +5,7 @@ public:
    fruit() {
       price = 200; many = 2; // default values
    }
-   fruit(float p, int n) {
+   fruit(int n, float p) {
       price = p;
       many = n;
    }
