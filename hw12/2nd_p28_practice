@@ -19,7 +19,7 @@ class oo : public nn
 {
 public :
 	oo() { a = 12; cout << "nn\n"; }
-	oo(int b) { d = a; a = b; nn::nn(a); cout << "nnb\n"; }
+	oo(int b) { d = a; a = b; nn::nn(a); cout << "oob\n"; }
 	int d;
 };
 
