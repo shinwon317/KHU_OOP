@@ -11,7 +11,7 @@ class B : public A{
 public:
 	B() : A(8) { A(88); bbb = ii + 5; };
 // A(88) no variable name
-	B(int x) : A() { bbb = x; ccc = ii * 5; };
+	B(int x) : A() { bbb = x; ccc = ii * 10; };
 	int bbb, ccc;
 
 };
