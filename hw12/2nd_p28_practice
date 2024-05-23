@@ -30,6 +30,6 @@ int main()
 	cout << pp.a << endl;
 	cout << pp.c << endl;
 	cout << kk.a << endl;
-	cout << kk.c << endl;
+	cout << kk.d << endl;
 	return 123;
 }
