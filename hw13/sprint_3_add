@@ -1,0 +1,25 @@
+#include <iostream>
+#include <vector> 
+using namespace std;
+
+int main() 
+{
+	vector <int> queue;
+	int k;  //집어넣을 데이터 갯수
+	int lost = 0;	//capacity가 큐에 이미 들어있는 공간보다 작을때 소멸되는 데이터 갯수
+	cout << "enter k : ";
+	cin >> k;
+	int capacity = 100;
+	if (capacity < queue.size() + k)
+	{
+		lost += queue.size() + k - capacity;
+		k = capacity - queue.size();
+	}
+
+	for (int i = 0; i < k; i++)
+	{
+		queue.push_back(rand() % 10);	// 0~9의 랜덤한 데이터값 삽입
+		cout << queue[i] << " ";
+	}
+	return 123;
+}
